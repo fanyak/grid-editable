@@ -1,0 +1,23 @@
+.table {
+    --border-color: rgba(0,0,0,0.5);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-top: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
+}
+
+.table > span {
+    display: flex;
+    padding: 8px 4px;
+    border-left: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color)
+}
+
+.table > span > span[contenteditable] {
+    width: 100%;
+    padding: 2px;
+}
+
+.table  > span > span[contenteditable]:focus {
+    outline-color: var(--border-color);
+}
